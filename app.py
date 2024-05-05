@@ -31,9 +31,9 @@ def makePredictions(path):
   predictions = model.predict(rgbimg)
   a = int(np.argmax(predictions))
   if a==1:
-    a = "pneumonic"
+    a = "The chest xray shows signs of pneumonia"
   else:
-    a="healthy"
+    a="The chest xray does not depict pneumonia"
   return a
 
 @app.route('/',methods=['GET','POST'])

@@ -7,11 +7,11 @@
 {% if show==True %}
 <center>
 
-    {% if message=="healthy" %}
+    {% if message=="The chest xray does not depict pneumonia" %}
     <h3><span class="badge badge-success">{{message}}</span></h3>
     {%endif%}
 
-    {% if message=="pneumonic" %}
+    {% if message=="The chest xray shows signs of pneumonia" %}
     <h3><span class="badge badge-danger">{{message}}</span></h3>
     {%endif%}
     <br>
